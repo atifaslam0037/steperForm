@@ -52,6 +52,7 @@ const Step1 = ({ formData, handleChange, onNext }) => {
           onChange={handleChange}
         />
       </div>
+      <div className="btn-con">
       <button
         disabled={!formData.firstName || firstNameError}
         onClick={onNext}
@@ -59,6 +60,7 @@ const Step1 = ({ formData, handleChange, onNext }) => {
       >
         Next
       </button>
+      </div>
     </>
   );
 };

@@ -10,7 +10,10 @@ const StepperForm = () => {
     lastName: '',
     email: '',
     course: '',
-    phoneNumber: ''
+    department: '',
+    phoneNumber: '',
+    addres: ''
+
   });
 
   const handleChange = (e) => {
@@ -57,7 +60,7 @@ const StepperForm = () => {
         );
       case 4:
         return (
-          <div>
+          <div className='text-center'>
             <h2>Finish</h2>
             <p>Form submission complete!</p>
           </div>
@@ -69,7 +72,7 @@ const StepperForm = () => {
 
   return (
     <>
-      <h1>Stepper Form</h1>
+      <h1 >Stepper Form</h1>
       {renderStepContent()}
     </>
   );

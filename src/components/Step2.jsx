@@ -10,13 +10,23 @@ const Step2 = ({ formData, handleChange, onNext, onBack }) => {
           name="course"
           value={formData.course}
           onChange={handleChange}
-          className='input'
+          className='input selet'
         >
           <option value="">Select a course</option>
           <option value="Physics">Physics</option>
           <option value="Chemistry">Chemistry</option>
           <option value="Math">Math</option>
         </select>
+      </div>
+      <div>
+        <label>Department</label>
+        <input
+          type="text"
+          name="department"
+          value={formData.department}
+          onChange={handleChange}
+          className='input'
+        />
       </div>
      <div className="btn-con">
       <button onClick={onBack} className='back-button'>
